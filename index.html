@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>LS_Machine_Learning_Developer</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>LS</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">START</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTS</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Welcome</p>
+                <h2>I'm <span>Leo Silima</span>, AI Engineer</h2>
+                <p class="descripcion"> Machine Learning Developer</p>
+                <a href="#portfolio">Go to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">About me</p>
+            <h2>Hello, I´m <span>Leonel Silima</span> </h2>
+            <h3>AI Engineer</h3>
+            <p>I'm graduate in Computer Systems with a Master's degree in Artificial Intelligence Engineering. 
+                I have experience as a full stack web developer, network administrator, and in developing Machine
+                 Learning models. Currently, I work as a developer of solutions in deep learning and computer vision.
+                  I am constantly seeking new challenges, learning, and integrating myself into intelligent teams to 
+                  exchange ideas. I have skills in programming, system architecture, and computer fundamentals. I have 
+                  developed interactive and robust web applications, configured networks, and gained knowledge in security.
+                   However, my true interest lies in the field of Machine Learning, where I create models to solve complex 
+                   problems and extract valuable insights from data. I believe in the importance of collaboration and teamwork
+                    to drive innovation. I am open to new opportunities and excited to take on challenges in innovative projects. 
+                    My goal is to deepen my knowledge in deep learning,
+                 computer vision, and AI-related areas to drive digital transformation.</p>
+                <a href="#">Dawnload my CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MY SERVICES</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Web Developer</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Java</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum sunt, asperiores!</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Artificial Intelligence</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Computer Vision</li>
+                </ul>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Coud</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>AWS</li>
+                    <li>Microsoft Azure</li>
+                    <li>IBM Cloud</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Data Base</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>MongoDB</li>
+                    <li>Jena Fuseki</li>
+                    <li>Mysql</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>External Consultant</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>UX</li>
+                    <li>Cyber security</li>
+                    <li>Software testing</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>SERVERS</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Ubuntu Server</li>
+                    <li>Windows Server</li>
+                    <li>DNS Server</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>Skills </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Web Development</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span> Data Base</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Artificial Intelligence</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">My Projects</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Project description</h4>
+                    <p>Web Development</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Project description</h4>
+                    <p>Web Development</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Project description</h4>
+                    <p>Machine Learning</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Project description</h4>
+                    <p>web Development</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>Web Development</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>Web Development</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto7.jpg" alt="">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>Deep Learning</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto8.jpg" alt="">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>Computer Vision</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.jpg" alt="">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>Web Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contact me now!</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Full name *" class="input-mitad">
+                    <input type="email" placeholder="E-mail address" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder=" Topic" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Send Message" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>&copy; 2023 LS. All rights reserved.</p>
+          
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
