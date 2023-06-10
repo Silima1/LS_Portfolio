@@ -14,14 +14,14 @@
         /* *********************/
         
         #inicio {
-            background: linear-gradient( rgba(26, 118, 211, 0.7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+            background: linear-gradient( rgba(26, 149, 211, 0.7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
             background-size: cover;
             background-position: center center;
             height: 100vh;
         }
         
         #inicio .contenido header {
-            background-color: rgba(0, 0, 0, .8);
+            background-color: rgba(58, 84, 227, 0.8);
             position: fixed;
             width: 100%;
             z-index: 100;
@@ -289,7 +289,7 @@
         /* *********************/
         
         .contenedor-skills {
-            background: linear-gradient( #eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background: linear-gradient( #18bcd2cc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -520,18 +520,18 @@
         /* *********************/
         
         footer {
-            background-color: #000;
-            color: #fff;
+            background-color: #210ec6;
+            color: #b1d463;
             text-align: center;
-            padding: 30px 0;
+            padding: 10px 0;
         }
         
         footer a {
             text-decoration: none;
             color: #fff;
             display: inline-block;
-            margin: 5px;
-            font-size: 26px;
+            margin: 4px;
+            font-size: 14px;
         }
         /* *********************/
         /* seccion R E S P O N S I V E */
