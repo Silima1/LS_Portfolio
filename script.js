@@ -1,41 +1,48 @@
-//Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
+// Aplica o estilo ao link selecionado e remove do anterior
 function seleccionar(link) {
-    var opciones = document.querySelectorAll('#links  a');
-    opciones[0].className = "";
-    opciones[1].className = "";
-    opciones[2].className = "";
-    opciones[3].className = "";
-    opciones[4].className = "";
-    link.className = "seleccionado";
+  const opciones = document.querySelectorAll('#links a');
+  opciones.forEach((a) => (a.className = ""));
+  link.className = "seleccionado";
 
-    //Hacemos desaparecer el menu una vez que se ha seleccionado una opcion
-    //en modo responsive
-    var x = document.getElementById("nav");
-    x.className = "";
+  // Fecha o menu no modo responsive após clicar
+  const nav = document.getElementById("nav");
+  nav.className = "";
 }
 
-//función que muestra el menu responsive
+// Mostra/oculta o menu responsive
 function responsiveMenu() {
-    var x = document.getElementById("nav");
-    if (x.className === "") {
-        x.className = "responsive";
-    } else {
-        x.className = "";
-    }
+  const nav = document.getElementById("nav");
+  nav.className = nav.className === "" ? "responsive" : "";
 }
 
-//detecto el scrolling para aplicar la animación del la barra de habilidades
-window.onscroll = function() { efectoHabilidades() };
+// Deteta scroll para animar as barras de skills
+window.onscroll = function () {
+  efectoHabilidades();
+};
 
-//funcion que aplica la animación de la barra de habilidades
+// Aplica a animação às barras de skills quando entra na viewport
 function efectoHabilidades() {
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if (distancia_skills >= 300) {
-        document.getElementById("html").classList.add("barra-progreso1");
-        document.getElementById("js").classList.add("barra-progreso2");
-        document.getElementById("bd").classList.add("barra-progreso3");
-        document.getElementById("ps").classList.add("barra-progreso4");
-    }
+  const skills = document.getElementById("skills");
+  if (!skills) return;
 
+  const distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+
+  if (distancia_skills >= 300) {
+    // NOVOS IDs (de acordo com o HTML que te enviei)
+    const mlops = document.getElementById("mlops");
+    const cloud = document.getElementById("cloud");
+    const ai = document.getElementById("ai");
+    const devops = document.getElementById("devops");
+    const obs = document.getElementById("obs");
+
+    // Adiciona classes se existirem (não quebra caso falte algum)
+    if (mlops) mlops.classList.add("barra-progreso1");
+    if (cloud) cloud.classList.add("barra-progreso2");
+    if (ai) ai.classList.add("barra-progreso3");
+    if (devops) devops.classList.add("barra-progreso4");
+    if (obs) obs.classList.add("barra-progreso5");
+
+    // Opcional: parar de verificar scroll depois de aplicar uma vez
+    window.onscroll = null;
+  }
 }
