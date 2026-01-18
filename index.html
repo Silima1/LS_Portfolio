@@ -1,317 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="estilo.css">
-    <title>LS_Machine_Learning_Developer</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+
+  <!-- ✅ Primary SEO -->
+  <title>Leonel Olímpio Silima | PhD Researcher · MLOps / LLMOps · AI Systems Engineer</title>
+  <meta name="description"
+        content="Leonel Olímpio Silima is a PhD Researcher and MLOps/LLMOps Engineer specialized in Artificial Intelligence, Machine Learning, DevOps, Cloud Computing and AI Systems Engineering." />
+  <meta name="keywords"
+        content="Leonel Olímpio Silima, Leonel Silima, Silima, MLOps, LLMOps, AI Engineer, Machine Learning, DevOps, Cloud, Kubernetes, Docker, LLM, RAG, Computer Vision, FEUP" />
+  <meta name="author" content="Leonel Olímpio Silima" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ Canonical (set to your GitHub Pages root or repo URL) -->
+  <link rel="canonical" href="https://silima1.github.io/" />
+
+  <!-- ✅ Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Leonel Olímpio Silima | PhD Researcher · MLOps/LLMOps · AI Systems Engineer" />
+  <meta property="og:description"
+        content="PhD Researcher (FEUP) and MLOps/LLMOps Engineer working with ML/LLM deployment, cloud-native platforms, and AI systems engineering." />
+  <meta property="og:url" content="https://silima1.github.io/" />
+  <meta property="og:image" content="img/foto.jpg" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leonel Olímpio Silima | PhD Researcher · MLOps/LLMOps · AI Systems Engineer" />
+  <meta name="twitter:description"
+        content="PhD Researcher (FEUP) and MLOps/LLMOps Engineer working with ML/LLM deployment, cloud-native platforms, and AI systems engineering." />
+  <meta name="twitter:image" content="img/foto.jpg" />
+
+  <!-- ✅ Structured Data for AI/SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Leonel Olímpio Silima",
+    "alternateName": ["Leonel Silima", "Silima", "Leonel"],
+    "jobTitle": "PhD Researcher in AI · MLOps / LLMOps Engineer · AI Systems Engineer",
+    "url": "https://silima1.github.io/",
+    "image": "https://silima1.github.io/img/foto.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/leonel-silima-4153b1104",
+      "https://github.com/Silima1",
+      "https://sessionize.com/leonel-silima"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Deep Learning",
+      "Large Language Models",
+      "RAG",
+      "MLOps",
+      "LLMOps",
+      "DevOps",
+      "Cloud Computing",
+      "Docker",
+      "Kubernetes",
+      "Observability",
+      "Computer Vision",
+      "Distributed Systems",
+      "Cybersecurity"
+    ]
+  }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 
 <body>
-    <!-- SECCION I N I C I O -->
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>LEO SILIMA </h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">START</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICES</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTS</a></li>
-                        </ul>
-                    </nav>
+  <!-- SECTION: START -->
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <h1>Leonel Olímpio Silima</h1>
 
-                    <!-- Icono del menu responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
+          <nav id="nav" class="">
+            <ul id="links">
+              <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">START</a></li>
+              <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT</a></li>
+              <li><a href="#servicios" onclick="seleccionar(this)">SERVICES</a></li>
+              <li><a href="#portfolio" onclick="seleccionar(this)">PROJECTS</a></li>
+              <li><a href="#contacto" onclick="seleccionar(this)">CONTACT</a></li>
+            </ul>
+          </nav>
 
+          <!-- Responsive menu icon -->
+          <div id="icono-nav" onclick="responsiveMenu()" aria-label="Open menu" role="button" tabindex="0">
+            <i class="fa-solid fa-bars"></i>
+          </div>
 
-                    <div class="redes">
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-                    </div>
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Welcome</p>
-                <h2>I'm <span>Leo Silima</span>, AI Engineer</h2>
-                <p class="descripcion"> Machine Learning Developer</p>
-                <a href="#portfolio">Go to Portfolio</a>
-            </div>
+          <!-- ✅ Professional/Social Links -->
+          <div class="redes" aria-label="Professional and social links">
+            <a href="https://github.com/Silima1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/leonel-silima-4153b1104"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://sessionize.com/leonel-silima"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Speaker profile">
+              <i class="fa-solid fa-microphone"></i>
+            </a>
+
+            <!-- ✅ If you want a different email, change it here -->
+            <a href="mailto:leonel.silima@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
         </div>
-    </section>
+      </header>
 
-    <!-- SECCION S O B R E M I -->
-    <section id="sobremi">
-        <div class="contenedor-foto">
-            <img src="img/foto.jpg" alt="">
-        </div>
-        <div class="sobremi">
-            <p class="titulo-seccion">About me</p>
-            <h2>Hello, I´m <span>Leonel Silima</span> </h2>
-            <h3>AI Engineer</h3>
-            <p>I'm graduate in Computer Systems with a Master's degree in Artificial Intelligence Engineering. 
-                I have experience as a full stack web developer, network administrator, and in developing Machine
-                 Learning models. Currently, I work as a developer of solutions in deep learning and computer vision.
-                  I am constantly seeking new challenges, learning, and integrating myself into intelligent teams to 
-                  exchange ideas. I have skills in programming, system architecture, and computer fundamentals. I have 
-                  developed interactive and robust web applications, configured networks, and gained knowledge in security.
-                   However, my true interest lies in the field of Machine Learning, where I create models to solve complex 
-                   problems and extract valuable insights from data. I believe in the importance of collaboration and teamwork
-                    to drive innovation. I am open to new opportunities and excited to take on challenges in innovative projects. 
-                    My goal is to deepen my knowledge in deep learning,
-                 computer vision, and AI-related areas to drive digital transformation.</p>
-                <a href="#">Dawnload my CV</a>
-        </div>
-    </section>
+      <div class="presentacion">
+        <p class="bienvenida">Welcome</p>
+        <h2>I'm <span>Leonel Olímpio Silima</span></h2>
+        <p class="descripcion">
+          PhD Researcher (FEUP) · MLOps / LLMOps Engineer · AI Systems Engineer
+        </p>
 
-    <!-- SECCION S E R V I C I O S -->
-    <section id="servicios">
-        <h3 class="titulo-seccion">MY SERVICES</h3>
-        <div class="fila">
-            <div class="servicio">
-                <span class="icono"> <i class="fa-solid fa-code"></i></span>
-                <h4>Web Developer</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>Java</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum sunt, asperiores!</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
-                <h4>Artificial Intelligence</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Machine Learning</li>
-                    <li>Deep Learning</li>
-                    <li>Computer Vision</li>
-                </ul>
-                </ul>
-                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
-                <h4>Coud</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>AWS</li>
-                    <li>Microsoft Azure</li>
-                    <li>IBM Cloud</li>
-                </ul>
-                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-database"></i></span>
-                <h4>Data Base</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>MongoDB</li>
-                    <li>Jena Fuseki</li>
-                    <li>Mysql</li>
-                </ul>
-                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-palette"></i></span>
-                <h4>External Consultant</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>UX</li>
-                    <li>Cyber security</li>
-                    <li>Software testing</li>
-                </ul>
-                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
-                <h4>SERVERS</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Ubuntu Server</li>
-                    <li>Windows Server</li>
-                    <li>DNS Server</li>
-                </ul>
-                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
-            </div>
-        </div>
-    </section>
+        <a href="#portfolio">Go to Projects</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- SECCION H A B I L I D A D E S -->
-    <div class="contenedor-skills" id="skills">
-        <h3>Skills </h3>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Html & Css</p>
-                <span class="porcentaje">95%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="html"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Web Development</p>
-                <span class="porcentaje">90%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="js"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span> Data Base</p>
-                <span class="porcentaje">90%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="bd"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Artificial Intelligence</p>
-                <span class="porcentaje">80%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="ps"></div>
-            </div>
-        </div>
+  <!-- SECTION: ABOUT -->
+  <section id="sobremi">
+    <div class="contenedor-foto">
+      <img src="img/foto.jpg" alt="Portrait of Leonel Olímpio Silima" />
     </div>
 
-    <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio">
-        <h3 class="titulo-seccion">My Projects</h3>
+    <div class="sobremi">
+      <p class="titulo-seccion">About</p>
+
+      <h2>Hello, I’m <span>Leonel Olímpio Silima</span></h2>
+      <h3>PhD Researcher · MLOps / LLMOps · AI Systems</h3>
+
+      <p>
+        I am a computer engineer specialized in <strong>MLOps and LLMOps</strong>, with experience in both
+        enterprise and research environments. I hold a <strong>Master’s degree in Applied Informatics</strong> and
+        I am currently a <strong>PhD Researcher in Electrical and Computer Engineering at FEUP (University of Porto)</strong>.
+      </p>
+
+      <p>
+        My work focuses on operationalizing <strong>Machine Learning</strong> and <strong>Large Language Models</strong>:
+        CI/CD for ML, reproducible pipelines, cloud-native deployments (Docker/Kubernetes), monitoring and continuous evaluation,
+        and building robust AI system architectures (including LLM tooling and RAG patterns).
+      </p>
+
+      <p>
+        I also have a strong background in <strong>DevOps</strong>, <strong>cloud platforms</strong>, system/network administration,
+        and cybersecurity practices, enabling end-to-end delivery from data and models to production systems.
+      </p>
+
+      <!-- ✅ Put CV_LEONEL2026.pdf in repo root -->
+      <a href="CV_LEONEL2026.pdf" download>Download my CV</a>
+    </div>
+  </section>
+
+  <!-- SECTION: SERVICES -->
+  <section id="servicios">
+    <h3 class="titulo-seccion">SERVICES</h3>
+
+    <div class="fila">
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-robot"></i></span>
+        <h4>MLOps / LLMOps Engineering</h4>
+        <hr />
+        <ul class="servicios-tag">
+          <li>ML Pipelines</li>
+          <li>LLM Deployment</li>
+          <li>RAG & Fine-tuning</li>
+        </ul>
+        <p>
+          Design and productionization of ML/LLM systems: reproducible training, model packaging, deployment,
+          and continuous evaluation with robust engineering practices.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-cloud"></i></span>
+        <h4>Cloud & Platform Engineering</h4>
+        <hr />
+        <ul class="servicios-tag">
+          <li>AWS / Azure / GCP</li>
+          <li>Docker & Kubernetes</li>
+          <li>IaC & Automation</li>
+        </ul>
+        <p>
+          Cloud-native architectures with container orchestration, scalable infrastructure, and automation for secure,
+          resilient production systems.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-diagram-project"></i></span>
+        <h4>DevOps & CI/CD</h4>
+        <hr />
+        <ul class="servicios-tag">
+          <li>GitHub Actions</li>
+          <li>Jenkins</li>
+          <li>Release Pipelines</li>
+        </ul>
+        <p>
+          CI/CD pipelines for applications and ML: testing, versioning, deployment strategies, and reliability improvements
+          across environments.
+        </p>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-chart-line"></i></span>
+        <h4>AI & Data Solutions</h4>
+        <hr />
+        <ul class="servicios-tag">
+          <li>Machine Learning</li>
+          <li>Deep Learning</li>
+          <li>Computer Vision</li>
+        </ul>
+        <p>
+          End-to-end AI development: problem framing, model development, evaluation, and delivering practical systems that
+          create measurable value.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-shield-halved"></i></span>
+        <h4>Security & Hardening</h4>
+        <hr />
+        <ul class="servicios-tag">
+          <li>Vulnerability Analysis</li>
+          <li>Cloud/K8s Security</li>
+          <li>Secure Automation</li>
+        </ul>
+        <p>
+          Security-focused engineering: risk assessment, hardening practices, and monitoring strategies for cloud-native and
+          AI production workloads.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-server"></i></span>
+        <h4>Systems & Networks</h4>
+        <hr />
+        <ul class="servicios-tag">
+          <li>Linux / Windows</li>
+          <li>DNS / SSH</li>
+          <li>Monitoring</li>
+        </ul>
+        <p>
+          Administration and operations support for servers and networks, including remote management, observability,
+          and performance troubleshooting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: SKILLS -->
+  <div class="contenedor-skills" id="skills">
+    <h3>Skills</h3>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>MLOps / LLMOps</p>
+        <span class="porcentaje">90%</span>
+      </div>
+      <div class="barra">
+        <div class="" id="mlops"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Cloud & Kubernetes</p>
+        <span class="porcentaje">88%</span>
+      </div>
+      <div class="barra">
+        <div class="" id="cloud"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Machine Learning & Deep Learning</p>
+        <span class="porcentaje">85%</span>
+      </div>
+      <div class="barra">
+        <div class="" id="ai"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>DevOps & Automation</p>
+        <span class="porcentaje">85%</span>
+      </div>
+      <div class="barra">
+        <div class="" id="devops"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Observability & Monitoring</p>
+        <span class="porcentaje">80%</span>
+      </div>
+      <div class="barra">
+        <div class="" id="obs"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: PROJECTS -->
+  <section id="portfolio">
+    <h3 class="titulo-seccion">Selected Projects</h3>
+
+    <!-- Replace the content with your real projects -->
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto1.jpg" alt="Project 1 cover image" />
+        <div class="info">
+          <h4>LLM/RAG Production Pipeline</h4>
+          <p>LLMOps · RAG · Deployment</p>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto2.jpg" alt="Project 2 cover image" />
+        <div class="info">
+          <h4>MLOps CI/CD for ML Models</h4>
+          <p>MLOps · CI/CD · Monitoring</p>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto3.jpg" alt="Project 3 cover image" />
+        <div class="info">
+          <h4>Computer Vision System</h4>
+          <p>Deep Learning · Computer Vision</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto4.jpg" alt="Project 4 cover image" />
+        <div class="info">
+          <h4>Cloud-Native Platform</h4>
+          <p>Kubernetes · Cloud</p>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto5.jpg" alt="Project 5 cover image" />
+        <div class="info">
+          <h4>Observability Stack</h4>
+          <p>Prometheus · Grafana</p>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto6.jpg" alt="Project 6 cover image" />
+        <div class="info">
+          <h4>Security Hardening</h4>
+          <p>Cybersecurity · Cloud/K8s</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto7.jpg" alt="Project 7 cover image" />
+        <div class="info">
+          <h4>Distributed AI Systems</h4>
+          <p>Distributed Systems · AI</p>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto8.jpg" alt="Project 8 cover image" />
+        <div class="info">
+          <h4>Edge/Industry Use Case</h4>
+          <p>Edge Computing · AI</p>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="img/proyecto9.jpg" alt="Project 9 cover image" />
+        <div class="info">
+          <h4>DevOps Automation Toolkit</h4>
+          <p>Automation · Scripting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: CONTACT -->
+  <section id="contacto">
+    <h3 class="titulo-seccion">Contact</h3>
+
+    <div class="contenedor-form">
+      <!-- Option A (easy): Use Formspree and set action to your endpoint -->
+      <!-- <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> -->
+
+      <form action="" method="POST">
+        <div class="fila mitad">
+          <input type="text" name="name" placeholder="Full name *" class="input-mitad" required />
+          <input type="email" name="email" placeholder="E-mail address *" class="input-mitad" required />
+        </div>
+
         <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto1.jpg" alt="">
-                <div class="info">
-                    <h4>Project description</h4>
-                    <p>Web Development</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto2.jpg" alt="">
-                <div class="info">
-                    <h4>Project description</h4>
-                    <p>Web Development</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto3.jpg" alt="">
-                <div class="info">
-                    <h4>Project description</h4>
-                    <p>Machine Learning</p>
-                </div>
-            </div>
+          <input type="text" name="topic" placeholder="Topic" class="input-full" />
         </div>
+
         <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto4.jpg" alt="">
-                <div class="info">
-                    <h4>Project description</h4>
-                    <p>web Development</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto5.jpg" alt="">
-                <div class="info">
-                    <h4>Project Description</h4>
-                    <p>Web Development</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto6.jpg" alt="">
-                <div class="info">
-                    <h4>Project Description</h4>
-                    <p>Web Development</p>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto7.jpg" alt="">
-                <div class="info">
-                    <h4>Project Description</h4>
-                    <p>Deep Learning</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto8.jpg" alt="">
-                <div class="info">
-                    <h4>Project Description</h4>
-                    <p>Computer Vision</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto9.jpg" alt="">
-                <div class="info">
-                    <h4>Project Description</h4>
-                    <p>Web Development</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCTION C O N T A C T O -->
-    <section id="contacto">
-        <h3 class="titulo-seccion">Contact me now!</h3>
-        <div class="contenedor-form">
-            <form action="">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Full name *" class="input-mitad">
-                    <input type="email" placeholder="E-mail address" class="input-mitad">
-                </div>
-                <div class="fila">
-                    <input type="text" placeholder=" Topic" class="input-full">
-                </div>
-                <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." class="input-full"></textarea>
-                </div>
-
-                <input type="submit" value="Send Message" class="btn-enviar">
-            </form>
-        </div>
-    </section>
-
-    <!-- SECCION FOOTER -->
-    <footer>
-        <p>&copy; 2023 LEO_SILIMA. All rights reserved.</p>
-          
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+          <textarea name="message" cols="30" rows="10" placeholder="Your message..." class="input-full" required></textarea>
         </div>
 
-    </footer>
+        <input type="submit" value="Send Message" class="btn-enviar" />
+      </form>
 
-    <script src="script.js"></script>
+      <p style="margin-top: 12px;">
+        Email: <a href="mailto:leonel.silima@gmail.com">leonel.silima@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Leonel Olímpio Silima. All rights reserved.</p>
+
+    <div class="redes" aria-label="Professional links footer">
+      <a href="https://github.com/Silima1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/leonel-silima-4153b1104"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://sessionize.com/leonel-silima"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Speaker profile">
+        <i class="fa-solid fa-microphone"></i>
+      </a>
+
+      <a href="mailto:leonel.silima@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
