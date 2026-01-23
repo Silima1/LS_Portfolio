@@ -543,6 +543,33 @@ footer a {
   nav {
     display: none;
   }
+@media screen and (max-width: 800px) {
+  /* MOSTRAR redes no mobile */
+  .redes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 200; /* garante ordem */
+  }
+
+  #icono-nav {
+    display: block;
+  }
+}
 
   nav.responsive {
     display: block;
