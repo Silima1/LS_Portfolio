@@ -1,79 +1,161 @@
-Leonel Olímpio Silima
-PhD Researcher · MLOps / LLMOps Engineer · AI Systems Engineer
+Perfeito — último ficheiro que falta agora é o **README.md**, alinhado com tudo o que já construíste (MLOps, LLMOps, research, projetos robustos, posicionamento internacional).
 
-This repository contains the source code of my professional and academic website. The project is designed to present my profile in a clear, technically grounded and internationally oriented way, with explicit emphasis on academic progression, international experience and production-grade AI systems.
+Aqui vai o **conteúdo completo para copiar e colar**:
 
-The website is published via GitHub Pages and serves as a canonical reference for recruiters, hiring managers, research collaborators and automated indexing systems.
+---
 
-Professional profile
+# Leonel Olímpio Silima — AI Systems Engineer · MLOps / LLMOps · PhD Researcher
 
-I am a computer engineer with advanced training in Artificial Intelligence, Machine Learning and computer systems engineering. My background combines formal academic education, applied research and hands-on industry experience across multiple countries and institutional contexts.
+This repository contains my professional portfolio, presenting my work at the intersection of **Artificial Intelligence engineering, MLOps/LLMOps, cloud-native systems, and applied research**.
 
-My core expertise lies in the engineering and operationalization of Machine Learning and Large Language Model systems, including MLOps and LLMOps practices, CI/CD pipelines, cloud-native deployment, monitoring, observability and continuous evaluation. I focus on building AI systems that are reliable, scalable and suitable for real-world production environments.
+The portfolio is designed to provide a structured view of my experience across **industry, research, and production-grade AI systems**.
 
-Academic background
+---
 
-I hold a Bachelor’s degree in Computer Science from the Universidade Católica de Moçambique, where I developed a strong foundation in computer science, programming, algorithms and system fundamentals.
+## Professional Summary
 
-I completed a Master’s degree in Applied Informatics through the Universidade de Aveiro, Portugal, in collaboration with Aily Labs in Barcelona, Spain. This international academic–industry experience allowed me to work on applied machine learning and data-driven systems, combining academic rigor with real-world industrial problem solving in a European innovation context.
+I am an **MLOps and LLMOps Engineer at LynxMind Portugal**, where I design and operate **production AI systems** with a focus on scalability, reproducibility, and reliability.
 
-I am currently a PhD Researcher in Electrical and Computer Engineering at the Faculty of Engineering of the University of Porto (FEUP), one of the leading engineering institutions in Portugal. My doctoral research focuses on Artificial Intelligence systems, scalable architectures and the integration of machine learning into complex and distributed computational environments.
+My work spans the full lifecycle of AI systems:
 
-In parallel with my doctoral studies, I am a Junior Researcher at INESC TEC, within the LIAAD research group. In this role, I contribute to applied research projects in collaboration with international partners, addressing real-world challenges in AI, data science and intelligent systems.
+* data pipelines and feature engineering
+* model development and experimentation
+* deployment and orchestration
+* monitoring, observability, and evaluation
 
-International experience
+In parallel, I am a **PhD Researcher in Electrical and Computer Engineering at FEUP (University of Porto)** and a **Junior Researcher at INESC TEC (LIAAD)**, working on topics related to:
 
-My academic and professional trajectory includes international experience across Europe and Asia. I have been involved in research, development and collaboration activities in multiple European contexts, particularly in Portugal and Spain, working with universities, research institutes and industry partners.
+* MLOps observability
+* LLM evaluation and reliability
+* reproducible AI systems
+* AI systems engineering
 
-In addition, my experience includes exposure to research and technological environments connected to China, allowing me to engage with different research cultures, technological ecosystems and perspectives on large-scale AI systems. This international exposure has strengthened my ability to work in multicultural, interdisciplinary and globally distributed teams.
+My trajectory combines **academic research and applied engineering**, with international experience across **Europe and Asia, including China**, working in distributed and multicultural environments.
 
-Specializations and certifications
+---
 
-In addition to formal academic degrees, I have pursued targeted advanced training to deepen my expertise in specific technical domains.
+## Education
 
-I completed a specialization in Deep Learning through Stanford University, focusing on modern neural network architectures and practical applications.
+Bachelor of Science in Computer Science
+Universidade Católica de Moçambique
 
-I also completed a specialization in Generative Artificial Intelligence at the Faculty of Sciences of the University of Porto (FCUP), with emphasis on generative models, large language models and contemporary AI workflows.
+Master of Science in Applied Informatics
+Universidade de Aveiro, Portugal
+In collaboration with Aily Labs, Barcelona, Spain
 
-To complement my engineering background with security awareness, I hold the IBM Ethical Hacker certificate, covering fundamental concepts in cybersecurity, threat analysis and secure system design.
+PhD in Electrical and Computer Engineering
+FEUP — University of Porto, Portugal
 
-Professional experience and focus
+---
 
-I have professional experience as an AI Engineer, MLOps Engineer and DevOps Engineer in both enterprise and research environments. My work spans the full lifecycle of AI systems, from data acquisition and model development to deployment, monitoring and long-term operation.
+## Certifications
 
-I combine software engineering discipline with cloud infrastructure, automation and reliability practices, aiming to deliver AI systems that are not only accurate, but also maintainable, observable and aligned with real operational constraints.
+Design Thinking for Human-Centered IoT Solutions
+LearnQuest — Coursera (2026)
 
-Purpose of this project
+Deep Learning Specialization
+Stanford University / deeplearning.ai
 
-This project is intentionally implemented as a lightweight and transparent static website. It reflects how I approach engineering problems in practice: clarity over unnecessary complexity, explicit design choices and long-term maintainability.
+Generative AI Specialization
+FCUP — University of Porto
 
-The website provides a concise overview of my skills, services and selected projects, while also acting as a stable digital identity anchor across professional, academic and international platforms.
+IBM Ethical Hacker Certificate
+IBM
 
-Technical overview
+AWS Machine Learning
+Amazon Web Services
 
-The technology stack is deliberately minimal and robust.
+Microsoft Azure Cloud
+Microsoft
 
-The frontend is built using HTML5, CSS3 and vanilla JavaScript.
-No frontend frameworks are used, in order to keep the codebase readable, auditable and easy to maintain.
-The site is hosted using GitHub Pages.
-SEO metadata and structured data are explicitly defined to ensure correct indexing by search engines and AI-based systems.
+---
 
-Repository structure
+## Core Technical Areas
 
-The index.html file defines the structure and content of the website.
-The estilo.css file contains all layout, styling and animation rules.
-The script.js file manages navigation behavior and scroll-based animations.
-The CV_LEONEL2026.pdf file contains my up-to-date curriculum vitae.
-The img directory contains profile images, backgrounds and project visuals.
+MLOps / LLMOps
+Kubeflow, MLflow, Airflow, TFX, LangChain, LlamaIndex, BentoML, Feast, Weights & Biases
 
-Engineering considerations
+Cloud & Platform Engineering
+AWS, Azure, Docker, Kubernetes, Terraform, GitHub Actions
 
-Even as a static project, the repository follows principles that I apply consistently in larger systems: separation of concerns, readability, responsiveness, accessibility and performance. The codebase is structured to be easily extended or integrated into more complex delivery pipelines if required.
+Languages & APIs
+Python, Go, Bash, FastAPI, REST APIs, SQL, scikit-learn
 
-Professional links
-This portfolio: https://leo-silima.netlify.app 
-GitHub: https://github.com/Silima1
+Prototyping & Experimentation
+Jupyter, Streamlit, Gradio, rapid ML prototyping
 
-LinkedIn: https://www.linkedin.com/in/leonel-silima-4153b1104
+Observability
+Prometheus, Grafana, OpenTelemetry, logging, tracing
 
-Speaker profile: https://sessionize.com/leonel-silima 
+Systems & DevOps
+CI/CD pipelines, distributed systems, infrastructure automation, secure delivery
+
+---
+
+## Selected Work
+
+### Generative AI Systems
+
+* **RAG-based Knowledge Platform**
+  Production-ready retrieval and generation system with evaluation and monitoring layers
+
+* **Multi-Agent LLM Orchestration System**
+  Agent-based workflows for task decomposition, tool integration, and response validation
+
+---
+
+### MLOps Platforms
+
+* **End-to-End MLOps Platform on Kubernetes**
+  Model lifecycle management including training, tracking, versioning, and deployment
+
+* **MLOps Observability & Evaluation Stack**
+  Monitoring, tracing, and evaluation pipelines for ML systems in production
+
+---
+
+### DevOps & Cloud Systems
+
+* **GitOps Delivery Workflow**
+  Version-controlled infrastructure and deployment pipelines with rollback strategies
+
+* **Cloud-Native DevOps Platform**
+  Scalable platform for AI and application workloads
+
+* **Secure Delivery & Runtime Hardening**
+  Security-aware deployment practices combined with observability
+
+---
+
+## Research Interests
+
+* MLOps observability
+* LLM evaluation and benchmarking
+* reproducible and reliable AI systems
+* AI systems engineering
+* generative AI in production environments
+
+---
+
+## Research & Professional Profiles
+This portfolio: 
+https://leo-silima.netlify.app  
+
+ORCID
+[https://orcid.org/0000-0003-0160-5979](https://orcid.org/0000-0003-0160-5979)
+
+LinkedIn
+[https://linkedin.com/in/leonel-silima-4153b1104](https://linkedin.com/in/leonel-silima-4153b1104)
+
+GitHub
+[https://github.com/Silima1](https://github.com/Silima1)
+
+Speaker Profile
+[https://sessionize.com/leonel-silima](https://sessionize.com/leonel-silima)
+
+---
+
+## Contact
+
+Email
+[leonel.silima0@gmail.com](mailto:leonel.silima0@gmail.com)
