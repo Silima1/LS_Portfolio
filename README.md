@@ -71,7 +71,7 @@ Engineering considerations
 Even as a static project, the repository follows principles that I apply consistently in larger systems: separation of concerns, readability, responsiveness, accessibility and performance. The codebase is structured to be easily extended or integrated into more complex delivery pipelines if required.
 
 Professional links
-
+This portfolio: https://leo-silima.netlify.app 
 GitHub: https://github.com/Silima1
 
 LinkedIn: https://www.linkedin.com/in/leonel-silima-4153b1104
