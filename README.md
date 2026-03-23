@@ -1,9 +1,3 @@
-Perfeito — último ficheiro que falta agora é o **README.md**, alinhado com tudo o que já construíste (MLOps, LLMOps, research, projetos robustos, posicionamento internacional).
-
-Aqui vai o **conteúdo completo para copiar e colar**:
-
----
-
 # Leonel Olímpio Silima — AI Systems Engineer · MLOps / LLMOps · PhD Researcher
 
 This repository contains my professional portfolio, presenting my work at the intersection of **Artificial Intelligence engineering, MLOps/LLMOps, cloud-native systems, and applied research**.
