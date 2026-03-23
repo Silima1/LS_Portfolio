@@ -17,7 +17,7 @@ body {
 }
 
 /* ===================== */
-/* GLOBAL TITLES */
+/* GLOBAL */
 /* ===================== */
 .titulo-seccion {
   text-align: center;
@@ -30,14 +30,18 @@ body {
   margin-bottom: 30px;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* ===================== */
-/* SECTION: START */
+/* HERO / START */
 /* ===================== */
 #inicio {
-  background: linear-gradient(rgba(26, 149, 211, 0.7), rgba(0, 0, 0, 0.75)), url("img/fondo-inicio.jpg");
+  background: linear-gradient(rgba(26, 149, 211, 0.7), rgba(0, 0, 0, 0.76)), url("img/fondo-inicio.jpg");
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #inicio .contenido header {
@@ -47,43 +51,51 @@ body {
   z-index: 999;
   top: 0;
   left: 0;
+  backdrop-filter: blur(6px);
 }
 
 #inicio .contenido header .contenido-header {
-  max-width: 1180px;
+  max-width: 1220px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  gap: 20px;
+  padding: 12px 20px;
+  gap: 18px;
 }
 
 #inicio .contenido header .contenido-header h1 {
   text-align: center;
   color: cyan;
   font-size: 24px;
+  font-weight: 700;
   white-space: nowrap;
+}
+
+#inicio .contenido header .contenido-header nav {
+  flex: 1;
 }
 
 #inicio .contenido header .contenido-header nav ul {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 #inicio .contenido header .contenido-header nav ul li a {
   text-decoration: none;
   color: #fff;
-  margin: 0 10px;
+  margin: 0 8px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   transition: .3s;
+  letter-spacing: .3px;
 }
 
 #inicio .contenido header .contenido-header nav ul li a:hover {
-  color: #1b3ac2;
+  color: #ffd1df;
 }
 
 #inicio .contenido header .contenido-header .seleccionado {
@@ -96,6 +108,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: nowrap;
 }
 
 #inicio .contenido header .contenido-header .redes a {
@@ -111,11 +124,19 @@ body {
 
 #inicio .contenido header .contenido-header .redes a:hover {
   color: #ff5080;
+  transform: translateY(-2px);
+}
+
+#icono-nav {
+  color: #fff;
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 #inicio .contenido .presentacion {
   max-width: 1100px;
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
   color: #fff;
   display: flex;
@@ -123,19 +144,20 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 120px 20px 40px 20px;
 }
 
 #inicio .contenido .presentacion .bienvenida {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 #inicio .contenido .presentacion h2 {
   font-size: 56px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  line-height: 1.15;
 }
 
 #inicio .contenido .presentacion h2 span {
@@ -144,10 +166,10 @@ body {
 }
 
 #inicio .contenido .presentacion .descripcion {
-  max-width: 860px;
-  margin: 20px auto 30px auto;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .cta-group {
@@ -164,25 +186,19 @@ body {
   border: 2px solid #fff;
   border-radius: 50px;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
-  transition: .4s;
+  transition: .35s;
 }
 
 #inicio .contenido .presentacion a:hover {
   background-color: #ff5080;
   border-color: #ff5080;
-}
-
-#icono-nav {
-  color: #fff;
-  display: none;
-  font-size: 22px;
-  cursor: pointer;
+  transform: translateY(-2px);
 }
 
 /* ===================== */
-/* SECTION: ABOUT */
+/* ABOUT */
 /* ===================== */
 #sobremi {
   max-width: 1100px;
@@ -245,7 +261,7 @@ body {
   border: 1px solid #000;
   padding: 12px 22px;
   margin-top: 20px;
-  transition: .4s;
+  transition: .35s;
   font-weight: 600;
 }
 
@@ -256,7 +272,7 @@ body {
 }
 
 /* ===================== */
-/* SHARED SECTION SPACING */
+/* SECTION SPACING */
 /* ===================== */
 #servicios,
 #tecnologias,
@@ -273,51 +289,54 @@ body {
 }
 
 #tecnologias,
-#research {
+#research,
+#portfolio {
   background-color: #ffffff;
 }
 
 /* ===================== */
-/* GRID ROWS */
+/* COMMON ROWS */
 /* ===================== */
 .fila {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 30px auto;
 }
 
 /* ===================== */
-/* CARD / SERVICE STYLE */
+/* GENERIC CARD */
 /* ===================== */
 .servicio {
   flex: 1;
   background-color: #fff;
   padding: 28px;
-  border-radius: 12px;
+  border-radius: 14px;
   transition: .35s;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(27, 58, 194, 0.05);
+  overflow: hidden;
 }
 
 .servicio:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
 }
 
 .servicio-imagen {
   width: 100%;
-  height: 190px;
+  height: 210px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 18px;
-  filter: grayscale(15%);
+  filter: grayscale(8%);
   transition: .35s;
 }
 
 .servicio:hover .servicio-imagen {
   filter: grayscale(0%);
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 .servicio .icono {
@@ -337,6 +356,7 @@ body {
   font-size: 21px;
   margin-bottom: 18px;
   color: #111135;
+  line-height: 1.35;
 }
 
 .servicio hr {
@@ -350,6 +370,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #555;
+  margin-bottom: 10px;
 }
 
 .servicios-tag {
@@ -376,7 +397,7 @@ body {
 }
 
 /* ===================== */
-/* SECTION: TECHNOLOGIES */
+/* TECHNOLOGIES / CERTIFICATIONS / RESEARCH */
 /* ===================== */
 #tecnologias .servicio,
 #certifications .servicio,
@@ -384,11 +405,16 @@ body {
   min-height: 100%;
 }
 
+#certifications .servicio p:last-child,
+#research .servicio p:last-child {
+  margin-bottom: 0;
+}
+
 /* ===================== */
-/* SECTION: PROJECTS */
+/* PROJECTS */
 /* ===================== */
 #portfolio {
-  max-width: 1150px;
+  max-width: 1250px;
   padding: 100px 15px;
   margin: auto;
 }
@@ -398,26 +424,32 @@ body {
 }
 
 #portfolio .fila {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
-  margin: 30px 0;
+  max-width: 1200px;
+  margin: 30px auto;
 }
 
 #portfolio .fila .proyecto {
-  flex: 1;
   border: 1px solid #d9d9d9;
-  border-radius: 12px;
+  border-radius: 14px;
   position: relative;
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: .35s;
+}
+
+#portfolio .fila .proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
 }
 
 #portfolio .fila .proyecto img {
   width: 100%;
-  height: 300px;
-  filter: grayscale(20%);
+  height: 340px;
+  filter: grayscale(10%);
   object-fit: cover;
   transition: .45s;
   display: block;
@@ -425,20 +457,20 @@ body {
 
 #portfolio .fila .proyecto:hover img {
   filter: grayscale(0);
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 #portfolio .fila .proyecto .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.15));
-  opacity: 0.7;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.15));
+  opacity: 0.82;
   transition: .35s;
   z-index: 1;
 }
 
 #portfolio .fila .proyecto:hover .overlay {
-  opacity: 0.92;
+  opacity: 0.93;
 }
 
 #portfolio .fila .proyecto .info {
@@ -455,6 +487,7 @@ body {
   font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
+  line-height: 1.35;
 }
 
 #portfolio .fila .proyecto .info p {
@@ -469,7 +502,7 @@ body {
 }
 
 /* ===================== */
-/* SECTION: CONTACT */
+/* CONTACT */
 /* ===================== */
 #contacto .contenedor-form {
   max-width: 1100px;
@@ -522,6 +555,7 @@ body {
   background-color: transparent;
   border: 1px solid #777 !important;
   width: auto;
+  font-weight: 600;
 }
 
 #contacto .btn-enviar:hover {
@@ -566,7 +600,7 @@ footer a:hover {
 }
 
 /* ===================== */
-/* LINKS INSIDE CARDS */
+/* LINKS INSIDE CONTENT */
 /* ===================== */
 .servicio a,
 #research a,
@@ -585,20 +619,20 @@ footer a:hover {
 }
 
 /* ===================== */
-/* MOBILE / RESPONSIVE */
+/* TABLET */
 /* ===================== */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   #inicio .contenido header .contenido-header h1 {
     font-size: 20px;
   }
 
   #inicio .contenido header .contenido-header nav ul li a {
     margin: 0 6px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   #inicio .contenido .presentacion h2 {
-    font-size: 44px;
+    font-size: 46px;
   }
 
   #sobremi {
@@ -608,17 +642,23 @@ footer a:hover {
   #sobremi .contenedor-foto {
     margin-right: 20px;
   }
+
+  #portfolio .fila {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
+/* ===================== */
+/* MOBILE NAV + LAYOUT */
+/* ===================== */
 @media screen and (max-width: 800px) {
   #inicio .contenido header .contenido-header {
     gap: 12px;
+    padding: 12px 14px;
   }
 
-  .redes {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  #inicio .contenido header .contenido-header h1 {
+    font-size: 18px;
   }
 
   #inicio .contenido header .contenido-header .redes {
@@ -627,13 +667,17 @@ footer a:hover {
     gap: 10px;
   }
 
+  #inicio .contenido header .contenido-header .redes a {
+    font-size: 16px;
+  }
+
   nav {
     display: none;
   }
 
   nav.responsive {
     display: block;
-    background-color: rgba(0, 0, 0, .88);
+    background-color: rgba(0, 0, 0, .9);
     width: 100%;
     position: absolute;
     top: 58px;
@@ -651,8 +695,17 @@ footer a:hover {
     margin: 10px 0;
   }
 
+  nav.responsive ul li a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+
   #icono-nav {
     display: block;
+  }
+
+  #inicio .contenido .presentacion {
+    padding-top: 120px;
   }
 
   #inicio .contenido .presentacion h2 {
@@ -665,6 +718,11 @@ footer a:hover {
 
   #inicio .contenido .presentacion .descripcion {
     font-size: 16px;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    align-items: center;
   }
 
   #sobremi {
@@ -706,7 +764,9 @@ footer a:hover {
 
   .fila,
   #servicios .fila,
-  #portfolio .fila {
+  #tecnologias .fila,
+  #certifications .fila,
+  #research .fila {
     display: block;
   }
 
@@ -717,12 +777,16 @@ footer a:hover {
     margin: 12px auto;
   }
 
+  #portfolio .fila {
+    display: block;
+  }
+
   #portfolio .fila .proyecto {
     margin: 14px auto;
   }
 
   #portfolio .fila .proyecto img {
-    height: 240px;
+    height: 260px;
   }
 
   #contacto .contenedor-form .mitad {
@@ -734,24 +798,22 @@ footer a:hover {
     width: 100%;
     margin-bottom: 15px;
   }
-
-  .cta-group {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
+/* ===================== */
+/* SMALL MOBILE */
+/* ===================== */
 @media screen and (max-width: 520px) {
   #inicio .contenido header .contenido-header {
-    padding: 10px 14px;
+    padding: 10px 12px;
   }
 
   #inicio .contenido header .contenido-header h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  #inicio .contenido header .contenido-header .redes a {
-    font-size: 16px;
+  #inicio .contenido header .contenido-header .redes {
+    gap: 8px;
   }
 
   #inicio .contenido .presentacion .bienvenida {
@@ -772,11 +834,11 @@ footer a:hover {
   }
 
   .servicio-imagen {
-    height: 170px;
+    height: 180px;
   }
 
   #portfolio .fila .proyecto img {
-    height: 210px;
+    height: 220px;
   }
 
   #portfolio .fila .proyecto .info h4 {
