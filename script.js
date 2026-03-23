@@ -1,15 +1,15 @@
-// Applies selected style to the clicked nav link and removes it from the others
+// Applies the selected style to the clicked navigation link
 function seleccionar(link) {
   const opciones = document.querySelectorAll('#links a');
   opciones.forEach((a) => (a.className = ""));
   link.className = "seleccionado";
 
-  // Hide the menu after selecting an option in responsive mode
+  // Close responsive menu after selecting an option
   const nav = document.getElementById("nav");
   nav.className = "";
 }
 
-// Toggles the responsive menu
+// Toggles the responsive navigation menu
 function responsiveMenu() {
   const nav = document.getElementById("nav");
   if (nav.className === "") {
@@ -19,40 +19,106 @@ function responsiveMenu() {
   }
 }
 
-// Detect scrolling to apply the skills bar animation
-window.onscroll = function () {
-  efectoHabilidades();
-};
+// Updates active menu item according to current section in viewport
+function actualizarMenuActivo() {
+  const secciones = document.querySelectorAll("section[id], div[id]");
+  const links = document.querySelectorAll('#links a');
 
-// Applies the animation to the skills bars when the section is visible
-function efectoHabilidades() {
-  const skills = document.getElementById("skills");
-  if (!skills) return;
+  let current = "";
 
-  const distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+  secciones.forEach((section) => {
+    const sectionTop = section.offsetTop - 140;
+    const sectionHeight = section.offsetHeight;
 
-  if (distancia_skills >= 300) {
-    // Updated IDs aligned with the current HTML
-    const mlops = document.getElementById("mlops");
-    const cloud = document.getElementById("cloud");
-    const ai = document.getElementById("ai");
-    const devops = document.getElementById("devops");
-    const obs = document.getElementById("obs");
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
 
-    // Add classes only if elements exist (safe in case of future edits)
-    if (mlops) mlops.classList.add("barra-progreso1");
-    if (cloud) cloud.classList.add("barra-progreso2");
-    if (ai) ai.classList.add("barra-progreso3");
-    if (devops) devops.classList.add("barra-progreso4");
-    if (obs) obs.classList.add("barra-progreso5");
-
-    // Optional: stop listening after animation runs once
-    window.onscroll = null;
-  }
+  links.forEach((link) => {
+    link.classList.remove("seleccionado");
+    const href = link.getAttribute("href");
+    if (href === `#${current}`) {
+      link.classList.add("seleccionado");
+    }
+  });
 }
 
-// Optional: Allow opening/closing the responsive menu using Enter/Space on the icon
-document.addEventListener("DOMContentLoaded", function () {
+// Intelligent relationship between Services and Projects
+// When hovering a service card, project cards with the same data-service category get highlighted
+function activarRelacionServiciosProjetos() {
+  const servicios = document.querySelectorAll('#servicios .servicio[data-category]');
+  const proyectos = document.querySelectorAll('#portfolio .proyecto[data-service]');
+
+  if (!servicios.length || !proyectos.length) return;
+
+  servicios.forEach((servicio) => {
+    servicio.addEventListener("mouseenter", () => {
+      const category = servicio.getAttribute("data-category");
+
+      proyectos.forEach((proyecto) => {
+        if (proyecto.getAttribute("data-service") === category) {
+          proyecto.style.transform = "translateY(-6px)";
+          proyecto.style.boxShadow = "0 16px 30px rgba(0, 0, 0, 0.18)";
+          proyecto.style.borderColor = "#ff5080";
+        } else {
+          proyecto.style.opacity = "0.55";
+          proyecto.style.transform = "scale(0.98)";
+        }
+      });
+    });
+
+    servicio.addEventListener("mouseleave", () => {
+      proyectos.forEach((proyecto) => {
+        proyecto.style.transform = "";
+        proyecto.style.boxShadow = "";
+        proyecto.style.borderColor = "";
+        proyecto.style.opacity = "";
+      });
+    });
+
+    // Touch/mobile support
+    servicio.addEventListener("click", () => {
+      const category = servicio.getAttribute("data-category");
+
+      proyectos.forEach((proyecto) => {
+        if (proyecto.getAttribute("data-service") === category) {
+          proyecto.style.transform = "translateY(-6px)";
+          proyecto.style.boxShadow = "0 16px 30px rgba(0, 0, 0, 0.18)";
+          proyecto.style.borderColor = "#ff5080";
+          proyecto.style.opacity = "1";
+        } else {
+          proyecto.style.opacity = "0.55";
+          proyecto.style.transform = "scale(0.98)";
+        }
+      });
+
+      // Scroll to portfolio on mobile when a service is tapped
+      const portfolio = document.getElementById("portfolio");
+      if (window.innerWidth <= 800 && portfolio) {
+        setTimeout(() => {
+          portfolio.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 180);
+      }
+    });
+  });
+
+  // Reset project highlight when user clicks outside service cards
+  document.addEventListener("click", (e) => {
+    const clicouServico = e.target.closest('#servicios .servicio[data-category]');
+    if (!clicouServico) {
+      proyectos.forEach((proyecto) => {
+        proyecto.style.transform = "";
+        proyecto.style.boxShadow = "";
+        proyecto.style.borderColor = "";
+        proyecto.style.opacity = "";
+      });
+    }
+  });
+}
+
+// Keyboard accessibility for menu icon
+function activarAcessibilidadeMenu() {
   const icono = document.getElementById("icono-nav");
   if (!icono) return;
 
@@ -62,4 +128,26 @@ document.addEventListener("DOMContentLoaded", function () {
       responsiveMenu();
     }
   });
+}
+
+// Improve external links behavior on mobile and desktop
+function reforzarLinksExternos() {
+  const linksExternos = document.querySelectorAll('a[target="_blank"]');
+
+  linksExternos.forEach((link) => {
+    link.setAttribute("rel", "noopener noreferrer");
+  });
+}
+
+// Initialize everything after DOM is loaded
+document.addEventListener("DOMContentLoaded", function () {
+  activarAcessibilidadeMenu();
+  activarRelacionServiciosProjetos();
+  reforzarLinksExternos();
+  actualizarMenuActivo();
+});
+
+// Scroll listener
+window.addEventListener("scroll", function () {
+  actualizarMenuActivo();
 });
