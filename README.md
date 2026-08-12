@@ -1,155 +1,127 @@
-# Leonel Olímpio Silima — AI Systems Engineer · MLOps / LLMOps · PhD Researcher
+# Leonel Olímpio Silima
 
-This repository contains my professional portfolio, presenting my work at the intersection of **Artificial Intelligence engineering, MLOps/LLMOps, cloud-native systems, and applied research**.
+MLOps / LLMOps Engineer · PhD Researcher in Electrical and Computer Engineering · AI Systems Engineer
 
-The portfolio is designed to provide a structured view of my experience across **industry, research, and production-grade AI systems**.
+This repository contains the source code of my professional and research portfolio. The site presents a career that started with computer networks, databases and public-sector information systems and later evolved through university teaching, academic network infrastructure, software engineering, cloud platforms, Machine Learning, MLOps, LLMOps and intelligent industrial systems.
 
----
+The portfolio is intended for international recruiters, engineering leaders, research collaborators and organizations working with production-grade Artificial Intelligence and distributed systems.
 
-## Professional Summary
+## Professional profile
 
-I am an **MLOps and LLMOps Engineer at LynxMind Portugal**, where I design and operate **production AI systems** with a focus on scalability, reproducibility, and reliability.
+I work in DevOps, MLOps and LLMOps-oriented engineering at LynxMind Portugal, where my responsibilities include the design, automation and monitoring of Machine Learning pipelines in production environments. My work covers Linux-based systems, CI/CD, Docker, Kubernetes, MLflow, DVC, Apache Airflow, model operationalization, cloud-native deployment, data governance and security-aware engineering practices.
 
-My work spans the full lifecycle of AI systems:
+In parallel, I am pursuing a PhD in Electrical and Computer Engineering at FEUP – University of Porto and carry out research within INESC TEC / LIAAD.
 
-* data pipelines and feature engineering
-* model development and experimentation
-* deployment and orchestration
-* monitoring, observability, and evaluation
+My doctoral study focuses on intelligent and explainable Cyber-Physical Systems for autonomous predictive maintenance in distributed Industry 4.0 and Industry 5.0 environments. The research integrates unsupervised learning, Digital Twins, Explainable Artificial Intelligence, uncertainty communication and human-in-the-loop decision support. Large Language Models are investigated as an interaction layer between maintenance professionals and validated system outputs, allowing Digital Twin state and explanation evidence to be queried through natural language without replacing the underlying predictive models or human decision-making.
 
-In parallel, I am a **PhD Researcher in Electrical and Computer Engineering at FEUP (University of Porto)** and a **Junior Researcher at INESC TEC (LIAAD)**, working on topics related to:
+## Career and academic journey
 
-* MLOps observability
-* LLM evaluation and reliability
-* reproducible AI systems
-* AI systems engineering
+My first formal technical training in computing dates to 2008, with a focus on computer networks and database technologies.
 
-My trajectory combines **academic research and applied engineering**, with international experience across **Europe and Asia, including China**, working in distributed and multicultural environments.
+From 2013 to 2018, I studied Information Technology at Universidade Católica de Moçambique. During the final years of the degree, from 2015 to 2017, I worked as a District Education Planner at the District Education Service of Ribáuè in Nampula.
 
----
+In 2018, I accepted a transfer to the Instituto Agrário de Ribáuè, where I worked as an IT trainer and administrator of the institution's Internet and network infrastructure.
 
-## Education
+In 2019, after completing the undergraduate degree, I became a focal point for MoRENet and completed specialized practical training in TCP/IP network protocols.
 
-Bachelor of Science in Computer Science
-Universidade Católica de Moçambique
+In 2020, I moved to Universidade Licungo, where I taught Engineering and Informatics and continued working as a MoRENet focal point. The university hosted data-centre infrastructure supporting Internet distribution across central and northern regions of Mozambique, giving me direct experience with institutional networking and distributed infrastructure.
 
-Master of Science in Applied Informatics
-Universidade de Aveiro, Portugal
-In collaboration with Aily Labs, Barcelona, Spain
+From 2021 to 2023, I completed a Master's degree in Applied Informatics at Universidade de Aveiro in Portugal. The degree included a six-month Machine Learning training program in Barcelona focused on applied modelling, data analysis and translating Machine Learning solutions into practical environments.
 
-PhD in Electrical and Computer Engineering
-FEUP — University of Porto, Portugal
+Since 2024, my work has concentrated on DevOps, MLOps, LLMOps, cloud-native engineering and production AI systems. I also have experience in technology consulting, infrastructure security, containerized environments and vulnerability-management tooling.
 
----
+In 2025, I completed postgraduate specialization in Generative Artificial Intelligence at FCUP – University of Porto, covering foundation models, LLMs, RAG architectures, fine-tuning and LLMOps practices. I also obtained Certified Ethical Hacker training/certification and contributed to scientific peer review.
 
-## Certifications
+In 2025/2026, I began the PhD in Electrical and Computer Engineering at FEUP. In 2026, I also completed specialized training in IoT Systems and Industrial Applications with Design Thinking, covering industrial automation, edge computing, security and IoT systems integration.
 
-Design Thinking for Human-Centered IoT Solutions
-LearnQuest — Coursera (2026)
+## Doctoral research
 
-Deep Learning Specialization
-Stanford University / deeplearning.ai
+Title: Intelligent and Explainable Cyber-Physical Systems for Autonomous Predictive Maintenance in Distributed Industry 4.0 and Industry 5.0
 
-Generative AI Specialization
-FCUP — University of Porto
+The research investigates an integrated framework for predictive maintenance rather than an isolated Machine Learning model. The architecture combines:
 
-IBM Ethical Hacker Certificate
-IBM
+- CPS and IIoT monitoring
+- distributed and edge processing
+- unsupervised anomaly detection and degradation monitoring
+- Digital Twin-based asset representation
+- Explainable AI and uncertainty communication
+- LLM-assisted human-machine interaction
+- human-in-the-loop maintenance decision support
 
-AWS Machine Learning
-Amazon Web Services
+The modelling focus is unsupervised learning because industrial environments often contain large volumes of normal operating data and relatively few labelled failures. Autoencoders are the main candidate architecture, with openness to temporal and alternative anomaly-detection approaches such as variational autoencoders, LSTM autoencoders, TCN autoencoders, Transformers, Isolation Forest, One-Class SVM and Local Outlier Factor.
 
-Microsoft Azure Cloud
-Microsoft
+The empirical case study uses operational data from Caetano electric buses. Evaluation covers predictive performance, robustness and drift, deployment behaviour, Digital Twin synchronization, explainability and user-centred decision value.
 
----
+## International awards and recognition
 
-## Core Technical Areas
+### 1st Place — Augmented and Virtual Reality
 
-MLOps / LLMOps
-Kubeflow, MLflow, Airflow, TFX, LangChain, LlamaIndex, BentoML, Feast, Weights & Biases
+International technology competition promoted by the World Bank and Nigeria's Ministry of Technology, focused on Augmented Reality and Virtual Reality.
 
-Cloud & Platform Engineering
-AWS, Azure, Docker, Kubernetes, Terraform, GitHub Actions
+### 3rd Place — Seeds for the Future, Huawei, China
 
-Languages & APIs
-Python, Go, Bash, FastAPI, REST APIs, SQL, scikit-learn
+International recognition in Huawei's Seeds for the Future program in China, focused on IoT and Computer Vision.
 
-Prototyping & Experimentation
-Jupyter, Streamlit, Gradio, rapid ML prototyping
+## Technical areas
 
-Observability
-Prometheus, Grafana, OpenTelemetry, logging, tracing
+### Machine Learning, Deep Learning and Explainable AI
 
-Systems & DevOps
-CI/CD pipelines, distributed systems, infrastructure automation, secure delivery
+Python, Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Keras, OpenCV, SHAP, LIME and Captum.
 
----
+### MLOps and LLMOps
 
-## Selected Work
+Docker, Kubernetes, Helm, MLflow, DVC, Apache Airflow, ONNX Runtime, FastAPI, LangChain, Hugging Face Transformers, OpenAI API, LLaMA, RAG pipelines, fine-tuning, prompt engineering, model serving and experiment tracking.
 
-### Generative AI Systems
+### Monitoring and observability
 
-* **RAG-based Knowledge Platform**
-  Production-ready retrieval and generation system with evaluation and monitoring layers
+Prometheus, Grafana, Evidently AI, model monitoring, drift detection, performance tracking and production alerting.
 
-* **Multi-Agent LLM Orchestration System**
-  Agent-based workflows for task decomposition, tool integration, and response validation
+### Cloud, edge and distributed systems
 
----
+AWS EC2, S3, SageMaker and EKS; Azure ML and Azure VMs; GCP Compute Engine; distributed systems; edge computing; IoT; real-time and stream processing.
 
-### MLOps Platforms
+### Infrastructure, networking and security
 
-* **End-to-End MLOps Platform on Kubernetes**
-  Model lifecycle management including training, tracking, versioning, and deployment
+Linux, Windows Server, TCP/IP, SSH, VMware vSphere, ESXi, Microsoft Hyper-V, cloud security, Kubernetes security, vulnerability assessment and security monitoring.
 
-* **MLOps Observability & Evaluation Stack**
-  Monitoring, tracing, and evaluation pipelines for ML systems in production
+### Automation and delivery
 
----
+GitHub Actions, Jenkins, Python, Bash, PowerShell, JavaScript, REST APIs and CI/CD pipelines.
 
-### DevOps & Cloud Systems
+## Representative project areas
 
-* **GitOps Delivery Workflow**
-  Version-controlled infrastructure and deployment pipelines with rollback strategies
+The portfolio presents seven representative engineering projects grouped into three areas.
 
-* **Cloud-Native DevOps Platform**
-  Scalable platform for AI and application workloads
+Generative AI includes an Industrial Maintenance Copilot for Digital Twin interaction and an enterprise RAG and agentic knowledge platform.
 
-* **Secure Delivery & Runtime Hardening**
-  Security-aware deployment practices combined with observability
+MLOps includes a predictive-maintenance MLOps pipeline and a model observability, drift and evaluation stack.
 
----
+DevOps includes a cloud-native CI/CD platform, secure container delivery and runtime operations, and hybrid infrastructure and network automation.
 
-## Research Interests
+The project descriptions intentionally avoid invented numerical performance claims. Where verified metrics become available, they can be added directly to the corresponding project cards.
 
-* MLOps observability
-* LLM evaluation and benchmarking
-* reproducible and reliable AI systems
-* AI systems engineering
-* generative AI in production environments
+## Professional and research profiles
 
----
+LinkedIn: https://www.linkedin.com/in/leonel-silima-4153b1104
 
-## Research & Professional Profiles
-This portfolio: 
-https://leo-silima.netlify.app  
+GitHub: https://github.com/Silima1
 
-ORCID
-[https://orcid.org/0000-0003-0160-5979](https://orcid.org/0000-0003-0160-5979)
+ORCID: https://orcid.org/0000-0003-0160-5979
 
-LinkedIn
-[https://linkedin.com/in/leonel-silima-4153b1104](https://linkedin.com/in/leonel-silima-4153b1104)
-
-GitHub
-[https://github.com/Silima1](https://github.com/Silima1)
-
-Speaker Profile
-[https://sessionize.com/leonel-silima](https://sessionize.com/leonel-silima)
-
----
+Speaker profile: https://sessionize.com/leonel-silima
 
 ## Contact
 
-Email
-[leonel.silima0@gmail.com](mailto:leonel.silima0@gmail.com)
+Email: leonel.silima0@gmail.com
+
+## Website implementation
+
+The portfolio is intentionally lightweight and maintainable. It is built with semantic HTML5, CSS3 and vanilla JavaScript and is deployed as a static site. The contact form is prepared for Netlify Forms and uses client-side submission so visitors can send a message without leaving the portfolio page.
+
+The codebase contains:
+
+- `index.html` for structure, content, SEO and structured data
+- `estilo.css` for responsive presentation and visual components
+- `script.js` for mobile navigation, section tracking, service-to-project interaction, progressive reveal and Netlify form submission
+- `CV_LEONEL_2026.pdf` as the downloadable curriculum vitae
+- `img/` for the profile and background assets
