@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -528,7 +529,36 @@ button {
 .visual-devops { background: linear-gradient(135deg, #1f2a44, #53617d); }
 .visual-ml { background: linear-gradient(135deg, #9a3155, #de6e48); }
 .visual-observability { background: linear-gradient(135deg, #0a715c, #26a780); }
+
 .visual-industry { background: linear-gradient(135deg, #5f4524, #a56a1c); }
+
+/* Branded enterprise project visuals */
+.project-brand-visual {
+  min-height: 190px;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.project-brand-visual .project-logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, .22));
+}
+
+.project-pardinus {
+  background: radial-gradient(circle at 25% 20%, rgba(255,255,255,.13), transparent 34%), linear-gradient(135deg, #111827, #26324a 55%, #0b1020);
+}
+
+.project-laiop {
+  background: radial-gradient(circle at 25% 20%, rgba(255,255,255,.18), transparent 32%), linear-gradient(135deg, #047f82, #079b9e 55%, #123b5a);
+}
+
+.featured-project {
+  border-color: rgba(37, 79, 214, .22);
+}
 
 .servicio h3,
 .servicio p,
