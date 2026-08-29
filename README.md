@@ -72,9 +72,9 @@ Python, Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Keras, OpenCV, SHAP, L
 
 Docker, Kubernetes, Helm, MLflow, DVC, Apache Airflow, ONNX Runtime, FastAPI, LangChain, Hugging Face Transformers, OpenAI API, LLaMA, RAG pipelines, fine-tuning, prompt engineering, model serving and experiment tracking.
 
-### Monitoring and observability
+### AIOps, monitoring and observability
 
-Prometheus, Grafana, Evidently AI, model monitoring, drift detection, performance tracking and production alerting.
+Checkmk, OpenTelemetry, Prometheus, Grafana, Langfuse, Loki, Tempo, Mimir, Evidently AI, model monitoring, drift detection, incident analysis, performance tracking and production alerting.
 
 ### Cloud, edge and distributed systems
 
@@ -84,17 +84,37 @@ AWS EC2, S3, SageMaker and EKS; Azure ML and Azure VMs; GCP Compute Engine; dist
 
 Linux, Windows Server, TCP/IP, SSH, VMware vSphere, ESXi, Microsoft Hyper-V, cloud security, Kubernetes security, vulnerability assessment and security monitoring.
 
-### Automation and delivery
+### Automation, event-driven systems and delivery
 
-GitHub Actions, Jenkins, Python, Bash, PowerShell, JavaScript, REST APIs and CI/CD pipelines.
+GitHub Actions, Jenkins, Temporal, Apache Kafka, Python, Bash, PowerShell, JavaScript, REST APIs, CI/CD pipelines and governed human-in-the-loop workflow automation.
 
 ## Representative project areas
 
-The portfolio presents seven representative engineering projects grouped into three areas.
+The portfolio now presents nine representative engineering projects, including two enterprise AIOps projects added from the attached source repositories.
+
+### Enterprise AIOps
+
+**Pardinus AI Suite — Agentic RCA & Proactive Operations for Checkmk**
+
+A Checkmk 2.5+ extension for AI-assisted Root Cause Analysis, proactive monitoring and operator assistance. The system ranks evidence across alerts, logs, topology and service history, reconstructs incident timelines, applies confidence scoring, collects distributed-monitoring context and can fall back to deterministic analysis when the LLM provider is unavailable. It also contains proactive RCA, storm protection, specialist agents, bounded ReAct investigations, controlled read-only domain diagnostics, a floating chatbot, token-usage accounting and offline licensing/code-protection mechanisms.
+
+Representative technologies: Python, Checkmk, Livestatus, REST APIs, OpenAI-compatible LLM endpoints, OpenTelemetry, SSH, SNMP, WinRM, PostgreSQL/Oracle diagnostic integrations, X.509 licensing and AES-256-GCM protected support exports.
+
+**Lynxmind AI-Tower LAIOP — Sovereign Event-Driven AIOps Platform**
+
+A cloud-agnostic AIOps architecture and Python monorepo designed around data sovereignty and trustworthy automation. Operational signals are validated, normalized and redacted before durable Kafka ingestion, then driven through a Temporal-based incident lifecycle covering correlation, triage, RCA, recommendation, confidence/risk routing, human-in-the-loop remediation, validation, rollback and reporting. AI reasoning is designed to use governed provider access and retrieval grounding while remaining deployable in SaaS, customer VPC and on-premises environments.
+
+Representative technologies: Python 3.14, FastAPI, Apache Kafka, Temporal, PostgreSQL, Qdrant, Redis, LiteLLM, Langfuse, OpenTelemetry, Prometheus/Loki/Tempo/Mimir/Grafana, Kubernetes, Helm, OIDC/RBAC, OPA, Vault/KMS and privacy redaction. The attached repository snapshot includes a runnable FastAPI backend/API foundation and modular scaffolding for the broader architecture.
+
+### Generative AI
 
 Generative AI includes an Industrial Maintenance Copilot for Digital Twin interaction and an enterprise RAG and agentic knowledge platform.
 
+### MLOps
+
 MLOps includes a predictive-maintenance MLOps pipeline and a model observability, drift and evaluation stack.
+
+### DevOps
 
 DevOps includes a cloud-native CI/CD platform, secure container delivery and runtime operations, and hybrid infrastructure and network automation.
 
